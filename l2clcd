@@ -1,0 +1,14 @@
+#include <LiquidCrystal_I2C.h>
+//included the library of I2C LCD
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+//declared the I2C LCD
+void setup(){
+lcd.init();
+//used the built-in function of keypad library function to initialize the LCD
+lcd.backlight(); //turn on the backlight of LCD
+//lcd.setCursor(2,0); 
+lcd.print("CSE");// print on the LCD
+lcd.blink();
+}
+void loop(){
+}
